@@ -61,7 +61,7 @@ export default class TableList extends Vue {
         }
 
         //追加
-        localStorage.setItem(dataArea.areaName, dataArea.areaNum);
+        localStorage.setItem(dataArea.areaName, String(dataArea.areaNum));
 
         //リロード
         location.reload();
