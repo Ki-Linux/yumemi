@@ -23,7 +23,7 @@ export default class TableList extends Vue {
         { headers: { 'X-API-KEY': process.env.API_KEY } })
             .then((res) => {
                 const ResData = res.data.result;
-                
+
                 for(let i=0; i<ResData.length; i++) {
 
                     //APIからとってきたデータを代入
@@ -56,11 +56,15 @@ export default class TableList extends Vue {
         const keyNum = localStorage.getItem(dataArea.areaName);
         if(keyNum !== null) {//localstorageに指定した値があれば削除する
             localStorage.removeItem(dataArea.areaName);
+            location.reload();
             return;
         }
 
         //追加
         localStorage.setItem(dataArea.areaName, dataArea.areaNum);
+
+        //リロード
+        location.reload();
     }
 }
 </script>
