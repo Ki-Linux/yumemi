@@ -1,7 +1,7 @@
 <template>
     <div>
         <top_title/>
-        <table_list @toGraph="graphShow"/>
+        <table_list/>
         <chart />
     </div>
 </template>
@@ -18,10 +18,6 @@ import Chart from '@/components/BarChart.vue';
     }
 })
 export default class PoplulationGraph extends Vue{
-    graphShow(numArea: number) {
-
-        //表で指定した値
-        console.log(numArea);
-    }
+    
 }
 </script>
