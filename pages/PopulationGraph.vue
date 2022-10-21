@@ -15,7 +15,7 @@ import TableList from '@/components/TableList.vue';
     }
 })
 export default class PoplulationGraph extends Vue{
-    graphShow(numArea) {
+    graphShow(numArea: number) {
 
         //表で指定した値
         console.log(numArea);

@@ -39,7 +39,7 @@ export default class TableList extends Vue {
             });
     }
 
-    checkArea(areaNum) {//クリックした都道府県のコード番号取得
+    checkArea(areaNum: number) {//クリックした都道府県のコード番号取得
         console.log(areaNum);
         this.$emit('toGraph', areaNum);
     }
