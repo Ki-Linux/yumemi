@@ -3,7 +3,7 @@
         <div>
             <p>都道府県</p>
             <label v-for="(area_data, index) in AreaData" :key="index">
-                <input type="checkbox" name="area" :value=index>
+                <input type="checkbox" name="area" @change="checkArea(area_data.areaNum)">
                 {{ area_data.areaName }}
             </label>
         </div>
@@ -37,6 +37,11 @@ export default class TableList extends Vue {
             .catch((err) => {
                 console.log(err);
             });
+    }
+
+    checkArea(areaNum) {//クリックした都道府県のコード番号取得
+        console.log(areaNum);
+        this.$emit('toGraph', areaNum);
     }
 }
 </script>
