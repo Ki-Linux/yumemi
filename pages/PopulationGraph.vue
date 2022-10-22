@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="PoplulationGraph">
         <top_title/>
         <table_list/>
         <div class="parentChart">
