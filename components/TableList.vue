@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div style="padding: 20px;">
+        <div class="areaList">
             <p>都道府県</p>
             <label v-for="(area_data, index) in AreaData" :key="index">
                 <input type="checkbox" name="area" @change="checkArea(index)" v-model="area_data.areaCheck">
@@ -68,3 +68,12 @@ export default class TableList extends Vue {
     }
 }
 </script>
+<style>
+.areaList {
+    padding: 20px;
+}
+
+.areaList label {   	
+    display: inline-block;
+}
+</style>
