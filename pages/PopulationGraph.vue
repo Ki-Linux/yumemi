@@ -2,7 +2,9 @@
     <div>
         <top_title/>
         <table_list/>
-        <chart />
+        <div class="parentChart">
+            <chart />
+        </div>
     </div>
 </template>
 <script lang="ts">
@@ -21,3 +23,8 @@ export default class PoplulationGraph extends Vue{
     
 }
 </script>
+<style>
+.parentChart {
+    padding: 20px;
+}
+</style>
