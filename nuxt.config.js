@@ -20,7 +20,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/Ki-Linux/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/ki-linux/favicon.ico' }
     ]
   },
 
@@ -61,6 +61,6 @@ export default {
   },
 
   router: {
-    base: '/Ki-Linux/'
+    base: '/ki-linux/'
   }
 }
