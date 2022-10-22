@@ -86,8 +86,8 @@ export default {
         const Item = localStorage.getItem(ItemKey);
 
         //APIを使ってグラフに示すデータを取ってくる
-        this.$axios.get(String(process.env.GRAPH_URL) + Item, 
-        { headers: { 'X-API-KEY': process.env.API_KEY } })
+        this.$axios.get("https://opendata.resas-portal.go.jp/api/v1/population/composition/perYear?prefCode=" + Item, 
+        { headers: { 'X-API-KEY': '3KyZlMrg6OjpumwZdjZ8fuMmbOy0lSwV2EKFZMaM' } })
             .then((res) => {
                 //console.log(res.data.result.data[0].data);
                 const detailData = res.data.result.data[0].data;
