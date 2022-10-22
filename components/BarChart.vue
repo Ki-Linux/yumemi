@@ -64,14 +64,12 @@ export default {
       options: {
         scales: {//x軸,y軸ののタイトル表示とy軸の幅
             xAxes: [{
-                //X軸
                 scaleLabel: {
                     display: true,
                     labelString: '年度'
                 }
             }],
             yAxes: [{
-                //Y軸
                 scaleLabel: {
                     display: true,
                     labelString: '人口数'
@@ -81,7 +79,6 @@ export default {
       },
     }
   },
-
   mounted() {
 
     for(let i=0; i<localStorage.length; i++) {
