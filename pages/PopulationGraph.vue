@@ -24,7 +24,22 @@ export default class PoplulationGraph extends Vue{
 }
 </script>
 <style>
-.parentChart {
-    padding: 20px;
+/*phone*/
+@media screen and (max-width: 480px) {
+    .parentChart {
+        padding: 5px;
+    }
+}
+/*タブレット*/
+@media screen and (min-width: 481px) and (max-width: 959px) {
+    .parentChart {
+        padding: 15px;
+    }
+}
+/*pc*/
+@media screen and (mix-width: 960px) {
+    .parentChart {
+        padding: 20px;
+    }
 }
 </style>
