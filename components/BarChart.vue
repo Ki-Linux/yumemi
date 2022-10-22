@@ -89,7 +89,7 @@ export default {
         this.$axios.get(String(process.env.GRAPH_URL) + Item, 
         { headers: { 'X-API-KEY': process.env.API_KEY } })
             .then((res) => {
-                console.log(res.data.result.data[0].data);
+                //console.log(res.data.result.data[0].data);
                 const detailData = res.data.result.data[0].data;
 
                 this.chartData.datasets.push({
@@ -105,7 +105,7 @@ export default {
                     backgroundColor: "rgba(0,0,0,0)"
                 });
 
-                console.log(this.chartData.datasets)
+                //console.log(this.chartData.datasets)
                 this.renderChart(this.chartData, this.options)
             })
             .catch((err) => {
