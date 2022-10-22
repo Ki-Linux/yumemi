@@ -19,8 +19,8 @@ export default class TableList extends Vue {
     mounted() {
 
         //APIで呼び出し
-        this.$axios.get("https://opendata.resas-portal.go.jp/api/v1/prefectures", 
-        { headers: { 'X-API-KEY': '3KyZlMrg6OjpumwZdjZ8fuMmbOy0lSwV2EKFZMaM' } })
+        this.$axios.get(String(process.env.BASE_URL), 
+        { headers: { 'X-API-KEY': process.env.API_KEY } })
             .then((res) => {
                 const ResData = res.data.result;
 
